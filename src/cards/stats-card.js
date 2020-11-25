@@ -42,7 +42,6 @@ const createTextNode = ({
 const renderStatsCard = (stats = {}, options = { hide: [] }) => {
   const {
     name,
-    totalStars,
     totalCommits,
     totalIssues,
     totalPRs,
@@ -88,12 +87,6 @@ const renderStatsCard = (stats = {}, options = { hide: [] }) => {
 
   // Meta data for creating text nodes with createTextNode function
   const STATS = {
-    stars: {
-      icon: icons.star,
-      label: i18n.t("statcard.totalstars"),
-      value: totalStars,
-      id: "stars",
-    },
     commits: {
       icon: icons.commits,
       label: `${i18n.t("statcard.commits")}${
