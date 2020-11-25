@@ -143,8 +143,8 @@ const renderStatsCard = (stats = {}, options = { hide: [] }) => {
     ? ""
     : `<g data-testid="rank-circle" 
           transform="translate(400, ${height / 2 - 50})">
-        <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
-        <circle class="rank-circle" cx="-10" cy="8" r="40" />
+        <circle class="rank-circle-rim" cx="-6" cy="8" r="40" />
+        <circle class="rank-circle" cx="-6" cy="8" r="40" />
         <g class="rank-text">
           <text
             x="${rank.level.length === 1 ? "-4" : "0"}"
